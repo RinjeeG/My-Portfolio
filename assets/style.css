@@ -3,5 +3,16 @@ body {
 }
 
 .header{
-    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 5px;
+    background-color: rgba(226, 186, 99, 0.856);
 }
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    align-items: right;
+  }
+  
