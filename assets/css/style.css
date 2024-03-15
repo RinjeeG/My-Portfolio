@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222; 
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff; 
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+aside img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 50%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section header {
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.projects-container article {
+    flex-basis: calc(50% - 20px); 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.horiseon {
+    background-image: url('../images/refactor.png');
+    background-size: cover;
+}
+
+.horiseon a {
+    background-color: #333;
+    color: white;
+}
+
+.horiseon a:hover {
+    color: #007bff;
+}
+
+.horiseon p {
+    background-color: #333;
+    color: white;
+}
+
+.project-2 {
+    background-image: url('../images/coming-soon.png');
+    background-size: contain;
+}
+
+.contact-me img {
+    max-width: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .projects-container article {
+        flex-basis: 100%;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+    margin-top: 20px;
+}

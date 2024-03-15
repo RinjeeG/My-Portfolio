@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinjee's Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <section class="header">
+    <header>
         <h1>Rinjee Sherpa</h1>
         <nav>
             <ul>
@@ -16,15 +16,48 @@
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
-    </section>
-    <section class="content">
-        <section id="about-me" class="about-me">
-            <h2>About me</h2>
+    </header>
+
+    <main>
+        <aside>
+            <img src="./assets/images/1690329889080.jpg" alt="Image of Rinjee" style="max-width: 350px;">
+        </aside>
+        <section id="about-me">
+            <header>
+                <h2>About Me</h2>
+            </header>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, saepe voluptatum placeat temporibus laboriosam quaerat corporis alias beatae qui perspiciatis expedita totam dolorum accusantium modi eum dolores iure neque voluptatem.</p>
-        </section> 
-        <section id="my-projects" class="my-projects">
-            <h2>My projects</h2>
-            <a href="https://rinjeeg.github.io/Horiseon-Refactoring/">Horiseon Refactoring</a>
         </section>
+
+        <section id="my-projects">
+            <header>
+                <h2>My Projects</h2>
+            </header>
+            <section class="projects-container">
+                <article class = "horiseon">
+                    <h3><a href="https://rinjeeg.github.io/Horiseon-Refactoring/">Horiseon Refactoring</a></h3>
+                    <p>A project focused on refactoring an existing website to improve accessibility and search engine optimization.</p>
+                </article>
+                <article class = "project-2">
+                    <h3>Projects Coming Soon</h3>
+                    <p>Stay tuned for more exciting projects!</p>
+                </article>
+                <!-- Additional <article> elements for each project here. -->
+            </section>
+        </section>
+
+        <section id="contact-me" class = "contact-me">
+            <header>
+                <h2>Contact Me</h2>
+            </header>
+            <a href="#"><img src = "./assets/images/github.png"></a>
+            <a href="#"><img src = "./assets/images/linkedin.png"></a>
+            <a href="#"><img src = "./assets/images/facebook.png"></a>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
 </body>
 </html>
