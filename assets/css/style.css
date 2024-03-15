@@ -1,19 +1,21 @@
-
+/* Reset default margin, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set default font, background, color, and line-height for the body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; 
-    color: #333; 
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
 }
 
+/* Header styling: background, text color, padding, and flex layout for alignment */
 header {
-    background-color: #222; 
+    background-color: #222;
     color: #fff;
     padding: 20px 10%;
     display: flex;
@@ -21,52 +23,62 @@ header {
     align-items: center;
 }
 
+/* Removes margin from header h1 for tighter control over spacing */
 header h1 {
     margin: 0;
 }
 
+/* Navigation styling: removes list styles, applies flex for horizontal layout */
 nav ul {
     list-style: none;
     display: flex;
 }
 
+/* Space between navigation links */
 nav ul li {
     margin-left: 20px;
 }
 
+/* Navigation link styling: color, removal of text decoration, and transition for hover effect */
 nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
+/* Changes navigation link color on hover for better user feedback */
 nav ul li a:hover {
-    color: #007bff; 
+    color: #007bff;
 }
 
+/* Main content area styling: width constraints, auto horizontal margins for centering, and padding */
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
+/* Styles images in the aside section: responsive width, auto height for aspect ratio, and border radius */
 aside img {
     width: 100%;
     max-width: 350px;
     height: auto;
-    display: block; 
-    margin: 20px auto; 
+    display: block;
+    margin: 20px auto;
     border-radius: 50%;
 }
 
+/* Margin bottom for each section for consistent spacing */
 section {
     margin-bottom: 40px;
 }
 
+/* Margin below section headers for separation from content */
 section header {
     margin-bottom: 20px;
 }
 
+/* Flex container for projects: wraps items, gap for spacing, and content justification */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -74,42 +86,44 @@ section header {
     justify-content: space-around;
 }
 
+/* Individual project article styling: basis for wrapping, background, padding, border radius, and shadow */
 .projects-container article {
-    flex-basis: calc(50% - 20px); 
+    flex-basis: calc(50% - 20px);
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Example project styles with background image and overlaying text color */
 .horiseon {
     background-image: url('../images/refactor.png');
     background-size: cover;
 }
 
-.horiseon a {
+/* Link and paragraph styling within the .horiseon project for contrast */
+.horiseon a, .horiseon p {
     background-color: #333;
     color: white;
 }
 
+/* Hover effect for links within .horiseon project */
 .horiseon a:hover {
     color: #007bff;
 }
 
-.horiseon p {
-    background-color: #333;
-    color: white;
-}
-
+/* Styling for a second project example with a different background image */
 .project-2 {
     background-image: url('../images/coming-soon.png');
     background-size: contain;
 }
 
+/* Contact image styling with maximum width constraint */
 .contact-me img {
     max-width: 80px;
 }
 
+/* Responsive design adjustments for navigation and project containers on smaller screens */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -125,6 +139,7 @@ section header {
     }
 }
 
+/* Footer styling: background, text color, text alignment, padding, and margin */
 footer {
     background-color: #222;
     color: #fff;
